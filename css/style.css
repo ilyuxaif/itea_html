@@ -24,8 +24,19 @@ p, li {
 }
 
 .block1 {
-    width: 500px;
+    width: 980px;
     margin: auto;
+}
+
+.block2 {
+    min-height: 20em;
+    margin: auto;
+
+    background-image: url("/images/reference/credo-bg.png");
+    background-size: 100% auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .nav {
@@ -35,8 +46,31 @@ p, li {
 }
 
 .nav li {
-    display: inline;
+    display: inline-block;
     padding: 5;
     margin: 5;
     cursor: pointer;
+}
+
+.exp {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #9f99b1;
+}
+
+.achievements {
+    list-style-image: url("/images/reference/icon-ok.png");
+    color: #9f99b1;
+}
+
+.str-points {
+    list-style-image: url("/images/reference/icon-ok-2.png");
+    color: #9f99b1;
+}
+
+.credo {
+    width: 980px;
+    margin: auto;
+    padding: 140px;
 }
