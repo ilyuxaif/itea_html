@@ -1,4 +1,6 @@
-html, body, p {
+html,
+body,
+p {
     padding: 0;
     margin: 0;
 }
@@ -110,7 +112,7 @@ h1 {
 
 }
 
-.hands-bg{
+.hands-bg {
     background-image: url("/images/reference/credo-bg.png");
     background-position: center;
     background-size: cover;
@@ -138,7 +140,8 @@ h1 {
     align-items: flex-end;
 }
 
-#contact-form input, #contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     padding: 20px;
     margin-bottom: 30px;
     font-size: 20px;
@@ -162,15 +165,14 @@ input#submit {
     font-size: 24px;
 }
 
-.gotop {
-    width: 100px;
-    height: 100px;
+#gotop {
+    text-decoration: none;
+    display: inline-block;
+    height: 75px;
+    width: 75px;
     background: #00ecbb;
     color: #6A13EB;
-    font-size: 24px;
-    
-}
-
-.gotop a {
-    text-decoration: none;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
 }
