@@ -13,14 +13,14 @@
 <body class="grey-text new-font">
     <div>
         <div class="purple">
-            <div class="block1 ">
+            <div class="block1" id="navigation">
                 <ul class="cyan-text nav" style="padding-top: 20px;">
                     <li><span class="bold-text cyan-text name-tag">ИЛЬЯ <br>ЧЕШКОВ</span></li>
-                    <li>Опыт работы</li>
-                    <li>Достижения</li>
-                    <li>Сильные стороны</li>
-                    <li>Личное</li>
-                    <li>Контакты</li>
+                    <li><a href="#experience" >Опыт работы</a></li>
+                    <li><a href="#achievements">Достижения</a></li>
+                    <li><a href="#strong_points">Сильные стороны</a></li>
+                    <li><a href="#personal">Личное</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
                 </ul>
 
                 <img class="logo-img" src="/images/my/portrait.jpg" alt="Мое фото" width="500">
@@ -33,7 +33,7 @@
             </div>
         </div>
 
-        <div class="block1">
+        <div class="block1" id="experience">
             <h2>Опыт работы</h2>
 
             <ol class="exp">
@@ -46,7 +46,7 @@
             </ol>
         </div>
 
-        <div class="block1 no-padding-top">
+        <div class="block1 no-padding-top" id="achievements">
             <h2><span class="bold-text">Мои достижения</span></h2>
             <p>Мои главные достижения за последнее время:</p>
             <ul class="achievements">
@@ -57,7 +57,7 @@
         </div>
 
 
-        <div class="block1 no-padding-top">
+        <div class="block1 no-padding-top" id="strong_points">
             <h2>Мои сильные стороны</h2>
 
             <ul class="str-points bold-text">
@@ -71,7 +71,7 @@
         </div>
         
         <div class="hands-bg">
-            <div class="block1">
+            <div class="block1" id="principles">
                 <h2 class="white-text">
                     Мой принцип работы:
                 </h2>
@@ -81,8 +81,8 @@
             </div>
         </div>
         
-        <div class="block1">
-            <h2>Наше личное:</h2>
+        <div class="block1" id="personal">
+            <h2>Немного о себе:</h2>
 
             <p class="paragraph"><span>Много писать, потом напишу.</span></p>
 
@@ -93,11 +93,16 @@
             </div>
         </div>
      
-        <div class="block1">
+        <div class="block1 no-padding-top" id="contacts">
             <h2>Контакты</h2>
-            <form action="">
-                <input type="text" name="" id="">
+            <form action="/" method="POST" id="contact-form">
+                <input type="text" name="name" placeholder="Ф. И. О.">
+                <input type="email" name="email" placeholder="E-mail">
+                <textarea name="message" placeholder="Сообщение"></textarea>
+                <input type="submit" name="submit" id="submit" value="Отправить">
             </form>
+            <button class="gotop"><a href="#navigation">&#11165;</a>
+            </a></button>
         </div>
         
     </div>

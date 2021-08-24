@@ -73,6 +73,11 @@ h1 {
     cursor: pointer;
 }
 
+.nav li a {
+    text-decoration: none;
+    color: #00ecbb;
+}
+
 .achievements {
     list-style-image: url("/images/reference/icon-ok.png");
     color: #9f99b1;
@@ -125,4 +130,47 @@ h1 {
 
 .block1.no-padding-top {
     padding-top: 0;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    width: 934px;
+    border: none;
+    border: 3px solid #00ecbb;
+}
+
+textarea {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100px;
+}
+
+input#submit {
+    width: 350px;
+    cursor: pointer;
+    background: #00ecbb;
+    color: #6A13EB;
+    font-size: 24px;
+}
+
+.gotop {
+    width: 100px;
+    height: 100px;
+    background: #00ecbb;
+    color: #6A13EB;
+    font-size: 24px;
+    
+}
+
+.gotop a {
+    text-decoration: none;
 }
