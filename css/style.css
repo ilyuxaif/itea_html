@@ -3,6 +3,7 @@ body,
 p {
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 .new-font {
@@ -17,6 +18,7 @@ h2 {
 h1 {
     color: black;
     font-size: 36px;
+    margin-top: 0;
 }
 
 .bold-text {
@@ -81,13 +83,34 @@ h1 {
 }
 
 .achievements {
-    list-style-image: url("/images/reference/icon-ok.png");
-    color: #9f99b1;
+    /* list-style-image: url("/images/reference/icon-ok.png"); */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.achievements li {
+    background: url("/images/reference/icon-ok.png") no-repeat left center;
+    padding-left: 70px;
+    margin: 20px 0;
 }
 
 .str-points {
-    list-style-image: url("/images/reference/icon-ok-2.png");
-    color: #9f99b1;
+    /* list-style-image: url("/images/reference/icon-ok-2.png"); */
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    column-count: 2;
+}
+
+.str-points li {
+    background: url("/images/reference/icon-ok-2.png") no-repeat left center;
+    padding-left: 70px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    margin: 30px 0;
+    margin-top: 0;
+    font-weight: bold;
 }
 
 .credo {
@@ -168,11 +191,32 @@ input#submit {
 #gotop {
     text-decoration: none;
     display: inline-block;
-    height: 75px;
-    width: 75px;
+    height: 74px;
+    width: 74px;
     background: #00ecbb;
     color: #6A13EB;
     font-size: 45px;
     font-weight: bold;
     text-align: center;
+    
+    position: fixed;
+    bottom: 80px;
+    right: 350px;
+}
+
+.logo-container {
+    width: 980px;
+    height: 644px;
+
+    background-image: url("/images/my/portrait.jpg");
+    background-size: cover;
+
+    box-shadow: 0px -120px 50px 0px rgba(0, 0, 0, 0.80) inset;
+}
+
+.text-overlap {
+    position: relative; 
+    padding: 0 60px; 
+    top: -90px; 
+    margin: 0;
 }
